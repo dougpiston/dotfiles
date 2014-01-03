@@ -75,6 +75,6 @@ function extract {
 fi
 }
 
-gc () {
-    git commit -m"`curl -s http://whatthecommit.com/index.txt` 		"
+gc() {
+   git commit -m"`curl -s http://whatthecommit.com/index.txt`"
 }
