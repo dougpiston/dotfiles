@@ -1,6 +1,9 @@
 # Adam Sparks
 # 01/02/14
 
+# POS Path
+export PATH="/Users/kaiju/android/platform-tools/":$PATH
+
 # PS1
 source ~/.git_prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -10,6 +13,9 @@ export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+# Android ADB completion
+source ~/.android/android
 
 # Alias
 alias reload='source ~/.bash_profile'
