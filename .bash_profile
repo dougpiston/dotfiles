@@ -4,6 +4,10 @@
 # POS Path
 export PATH="/Users/kaiju/android/platform-tools/":$PATH
 
+# ls-- fix stupid Mac
+export CLICOLOR_FORCE=1
+export DISPLAY=1
+
 # PS1
 source ~/.git_prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -19,7 +23,7 @@ source ~/.android/android
 
 # Alias
 alias reload='source ~/.bash_profile'
-alias ls='ls -lhaG'
+alias ls='ls++'
 alias grep='grep --color=auto'
 alias suod='sudo'
 alias bi='brew install'
@@ -75,6 +79,7 @@ function extract {
 fi
 }
 
+# Git commit message whatthecommit.
 gc() {
    git commit -m"`curl -s http://whatthecommit.com/index.txt`"
 }
