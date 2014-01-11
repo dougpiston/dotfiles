@@ -3,7 +3,7 @@
 " General settings
 syntax on " Turn on syntax highlighting
 set t_Co=256 " Set 256 color
-color grb256 " Colors
+color jellybeans " Colors
 set number " Show line numbers
 set noshowmode " Don't show current mode, powerline handles it.
 set noswapfile " Don't use swap file
@@ -14,7 +14,7 @@ set autoindent " Auto indentation
 set nobackup " No *~ backup files
 set ignorecase " Ignore case in search
 filetype on " Detect file type
-filetype indent on " File tyoe specfic indenting
+filetype indent on " File type specfic indenting
 
 " Pathogen
 execute pathogen#infect()
