@@ -83,3 +83,8 @@ fi
 gc() {
    git commit -m"`curl -s http://whatthecommit.com/index.txt`"
 }
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
