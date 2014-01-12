@@ -1,6 +1,6 @@
 # Adam Sparks
 
-# POS Path
+# POS Path for Android
 export PATH="/Users/kaiju/android/platform-tools/":$PATH
 
 # ls-- fix stupid Mac
