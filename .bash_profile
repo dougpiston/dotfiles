@@ -1,5 +1,4 @@
 # Adam Sparks
-# 01/02/14
 
 # POS Path
 export PATH="/Users/kaiju/android/platform-tools/":$PATH
@@ -28,6 +27,7 @@ alias grep='grep --color=auto'
 alias suod='sudo'
 alias bi='brew install'
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+alias c='clear'
 
 # History
 export HISTCONTROL=erasedups
