@@ -1,16 +1,18 @@
 " ~/.vimrc
 
-" General settings
+" General settings 
 syntax on " Turn on syntax highlighting
 set t_Co=256 " Set 256 color
-color jellybeans " Colors
+colorscheme jellybeans " Color scheme
 set number " Show line numbers
 set noshowmode " Don't show current mode, powerline handles it.
 set noswapfile " Don't use swap file
 set laststatus=2 " Show Powerline
 set hlsearch " Highlight search
+set incsearch " Show seraches as you type
 set showmatch " Cursor shows matching ) and }
 set autoindent " Auto indentation
+set copyindent " Copy the previous indentation
 set nobackup " No *~ backup files
 set ignorecase " Ignore case in search
 filetype on " Detect file type
@@ -22,9 +24,14 @@ execute pathogen#infect()
 " Supertab top to bottom scroll
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
+" NERDtree shortcut
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
+
 " Folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
+set foldcolumn=2
 
 " Powerline
 python import sys; sys.path.append("/usr/local/lib/python2.7/site-packages/")
