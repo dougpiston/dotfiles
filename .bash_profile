@@ -9,6 +9,7 @@ export DISPLAY=1
 
 # PS1
 source ~/.git_prompt.sh
+GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(__git_ps1) "
 
@@ -26,8 +27,11 @@ alias ls='ls++'
 alias grep='grep --color=auto'
 alias suod='sudo'
 alias bi='brew install'
+alias bu='brew update && brew upgrade'
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias c='clear'
+alias home='ssh home'
+alias pi='ssh pi'
 
 # History
 export HISTCONTROL=erasedups
