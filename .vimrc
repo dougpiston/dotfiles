@@ -26,7 +26,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " NERDtree shortcut
 map <C-n> :NERDTreeToggle<CR>
-let g:NERDTreeWinPos = "right"
 
 " Folds
 autocmd BufWinLeave *.* mkview
