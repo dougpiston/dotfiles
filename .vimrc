@@ -27,6 +27,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " NERDtree shortcut
 map <C-n> :NERDTreeToggle<CR>
 
+" Delimitmate
+let delimitMate_expand_cr = 1
+
 " Folds
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
