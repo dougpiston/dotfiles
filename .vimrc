@@ -15,6 +15,7 @@ set autoindent " Auto indentation
 set copyindent " Copy the previous indentation
 set nobackup " No *~ backup files
 set ignorecase " Ignore case in search
+set backspace=2 " Fix backspace (F U Yosemite)
 filetype on " Detect file type
 filetype indent on " File type specfic indenting
 
